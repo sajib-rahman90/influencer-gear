@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.b-1 {
+  border: 1px solid #b42525;
+}
+.b-2 {
+  border: 1px solid #1ace7a;
+}
+.btn-primary {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 41px;
+  background: #e02c6d;
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+
+/* navbar start */
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links ul {
+  display: flex;
+}
+.nav-links ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+.nav-links ul a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.logo h1 {
+  color: #3a3a3a;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* navbar section end */
+/* banner section start */
+.banner {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6.1rem;
+}
+
+.banner-content {
+  max-width: 550px;
+}
+.banner-content h1 {
+  color: #3a3a3a;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-content p {
+  color: #3a3a3a;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
+/* banner section end */
+/* logo section start */
+.logo-section div {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 50px;
+  align-items: center;
+}
+/* popular section start */
+.popular {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.popular-products {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.popular-title h2 {
+  margin-top: 20px;
+  color: #3a3a3a;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 1.55rem;
+  font-weight: 600;
+  text-align: center;
+}
+.popular-items {
+  max-width: 320px;
+  max-height: 450px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.popular-items img {
+  width: 100%;
+}
+.popular-items h3 {
+  color: #18191f;
+  font-family: Poppins;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+.popular-items .price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.45rem;
+  font-weight: 400;
+}
+.popular-items .rating {
+  color: var(--gray-80, #5e6366);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.popular-items p {
+  color: var(--Gray-50, #787885);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.252px;
+}
+
+/* responsive start */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-content h1 {
+    font-size: 1.75rem;
+  }
+  .banner-content p {
+    font-size: 15px;
+  }
+
+  .logo-section div {
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .popular-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
